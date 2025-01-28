@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emission Calculator - EcoCompare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Emission Calculator Form -->
+    <section id="calculator" class="section">
+        <h2>Emission Calculator</h2>
+        <form id="emissionForm">
+            <label for="weight">Vehicle Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="distance">Distance Traveled (km):</label>
+            <input type="number" id="distance" name="distance" required>
+
+            <label for="temperature">Temperature (°C):</label>
+            <input type="number" id="temperature" name="temperature" required>
+
+            <label for="altitude">Altitude (meters):</label>
+            <input type="number" id="altitude" name="altitude" required>
+
+            <label for="fuel">Fuel Type:</label>
+            <select id="fuel" name="fuel" required>
+                <option value="petrol">Petrol</option>
+                <option value="diesel">Diesel</option>
+            </select>
+
+            <label for="energySource">EV Charging Source:</label>
+            <select id="energySource" name="energySource" required>
+                <option value="hard_coal">hard_coal</option>
+                <option value="lignite">lignite</option>
+                <option value="natural_gas">Natural Gas</option>
+                <option value="nuclear">Nuclear</option>
+                <option value="hydro">hydro</option>
+                <option value="wind">wind</option>
+                <option value="solar">solar</option>
+                <option value="biomass">biomass</option>
+                <option value="others">others</option>
+            </select>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result-container">
+            <div class="result-box" id="emission-ev">Emissions for EV (kg CO2): 0</div>
+            <div class="result-box" id="emission-petrol-diesel">Emissions for Petrol/Diesel (kg CO2): 0</div>
+            <div class="result-box" id="total-gain">Total Gain Possible (kg CO2): 0</div>
+        </div>
+
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="videos/co2_emissions.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Vehicle Cards Section -->
+    <section id="cards" class="cards-section">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>EV: Tesla Model 3</h3>
+                    <img src="images/teslamodel3.jpg" alt="Tesla Model 3" class="vehicle-image">
+                    <p><strong>Weight:</strong> 1625 kg</p>
+                </div>
+                <div class="card-back">
+                    <p><strong>Range:</strong> 423 km</p>
+                    <p><strong>Charging Source:</strong> Solar</p>
+                    <p><strong>Emissions:</strong> 0 g/km</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>ICEV: Toyota Corolla</h3>
+                    <img src="images/corolla.jpg" alt="Toyota Corolla" class="vehicle-image">
+                    <p><strong>Weight:</strong> 1315 kg</p>
+                </div>
+                <div class="card-back">
+                    <p><strong>Fuel Efficiency:</strong> 6.8 L/100 km</p>
+                    <p><strong>Fuel Type:</strong> Petrol</p>
+                    <p><strong>Emissions:</strong> 150 g/km</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>EV: Nissan Leaf</h3>
+                    <img src="images/nissanleaf.jpg" alt="Nissan Leaf" class="vehicle-image">
+                    <p><strong>Weight:</strong> 1500 kg</p>
+                </div>
+                <div class="card-back">
+                    <p><strong>Range:</strong> 270 km</p>
+                    <p><strong>Charging Source:</strong> Wind</p>
+                    <p><strong>Emissions:</strong> 0 g/km</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>ICEV: Honda Civic</h3>
+                    <img src="images/hondacivic.jpg" alt="Honda Civic" class="vehicle-image">
+                    <p><strong>Weight:</strong> 1290 kg</p>
+                </div>
+                <div class="card-back">
+                    <p><strong>Fuel Efficiency:</strong> 7.1 L/100 km</p>
+                    <p><strong>Fuel Type:</strong> Diesel</p>
+                    <p><strong>Emissions:</strong> 170 g/km</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoCompare - EV vs ICEV Emission Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">EcoCompare</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="calculator/index.html">Emission Calculator</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Landing Section -->
+    <section id="home" class="landing">
+      <img src="images/background.jpg" alt="Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: blur(8px) brightness(0.5);">
+      <div class="hero-content">
+          <h1>EcoCompare</h1>
+          <p>Explore the environmental impact of Electric Vehicles (EVs) vs Internal Combustion Engine Vehicles (ICEVs).</p>
+          <button onclick="window.location.href='calculator/index.html'">Start Emission Calculation</button>
+      </div>
+  </section>
+  
+    
+
+    <!-- Why Choose Us Section -->
+    <section id="features" class="section">
+        <h2>Why Choose Us?</h2>
+        <p>EcoCompare helps you make informed decisions about vehicle choices and their environmental impacts.</p>
+        <div class="feature-cards">
+            <div class="card">Comprehensive and accurate emission comparisons between EVs and ICEVs.</div>
+            <div class="card">User-friendly tools to calculate and visualize your carbon footprint.</div>
+            <div class="card">Educational insights to empower sustainable lifestyle choices.</div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <h2>Frequently Asked Questions</h2>
+    
+        <div class="faq-item">
+            <h3 class="faq-question">What is an EV?</h3>
+            <div class="faq-answer">
+                <p>An electric vehicle (EV) runs on electricity stored in a battery and is much more energy-efficient than ICEVs.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3 class="faq-question">Why is Emission Important?</h3>
+            <div class="faq-answer">
+                <p>Emissions contribute to climate change, so reducing vehicle emissions is essential for a sustainable future.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3 class="faq-question">How does an EV save energy?</h3>
+            <div class="faq-answer">
+                <p>EVs use energy more efficiently because they convert a higher percentage of electrical energy into vehicle movement compared to traditional engines.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3 class="faq-question">What are the benefits of EVs?</h3>
+            <div class="faq-answer">
+                <p>EVs reduce air pollution, lower greenhouse gas emissions, and often have lower maintenance costs compared to traditional vehicles.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <h3 class="faq-question">What are the challenges of EV adoption?</h3>
+            <div class="faq-answer">
+                <p>Challenges include limited charging infrastructure, battery range anxiety, and higher upfront costs compared to ICEVs.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EcoCompare. All rights reserved.</p>
+    </footer>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV Emission Chatbot</title>
+    <link rel="stylesheet" href="chatbot/chat.css">
+  </head>
+  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+   
+    <div class="chatbot-toggle" id="chatbotToggle">
+      <span class="pulse"></span>
+      <img src="images/chatping.png" alt="Chat Icon">
+    </div>
+  
+    <!-- Chatbot Container -->
+    <div class="chatbot-container hidden" id="chatbotContainer">
+      <header class="chat-header">
+        <h2>DriveXpert</h2>
+        <button class="close-btn" id="closeChatbot">✖</button>
+      </header>
+      <div class="chat-box" id="chatBox">
+        <div class="bot-message">
+          <p>Hello! How can I help you today ?</p>
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type your message here...">
+        <button id="sendBtn">
+          <img src="images/send.png" alt="Send Icon">
+        </button>
+      </div>
+    </div>
+
+  <script src="chatbot/chat.js"></script>  
+</body>
+</html>
